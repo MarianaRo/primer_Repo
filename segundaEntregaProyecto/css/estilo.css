@@ -1,0 +1,304 @@
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background: rgb(252,244,248);
+  background: linear-gradient(90deg, rgba(252,244,248,1) 0%, rgba(207,213,221,1) 100%);
+  height: 300px;
+  
+}
+
+/*  INICIO ESTILO HEADER - BARRA DE NAVEGACION*/
+
+.header{
+  width: 100%;
+  height: 100px;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.headerLogo{
+  width: 200px;
+  margin-left: 40px;
+
+}
+
+.headerLogo img{
+  width: 185px;
+
+}
+
+.headerMenu{
+  width: 40%;
+  margin-right: 40px;
+}
+
+.headerMenu ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.headerMenu ul li{
+  display: inline-block;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.headerMenu li a:hover {
+  background-color: #585858;
+  color: #ffffff;
+}
+
+/* fin de estilo barra de navegacion*/
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+p {
+  font-family: "Dancing Script", cursive;
+  font-size: 150%;
+  text-align: justify;
+  margin-left: 30px;
+  margin-right: 30px ;
+  margin-top: 2%;
+  
+}
+
+/* estilo fotos principales index.html*/
+
+#imagenesHome{
+  margin-top: 1%;
+  margin-left: 8%;
+  margin-right: 2%;
+  display: inline-block;
+  
+  
+}
+
+#foto1{
+  max-width: 30%;
+  height: auto;
+  padding: 0.5%;
+  display: inline-block;
+  margin: auto;
+}
+#foto2{
+  max-width: 30%;
+  height: auto;
+  padding: 0.5%;
+  display: inline-block;
+  margin: auto;
+}
+
+#foto3{
+  max-width: 30%;
+  height: auto;
+  padding: 0.5%;
+  display: inline-block;
+  margin: auto;
+}
+
+/* fin estilo imagenes principales index.html*/
+
+
+
+/* estilo GALERIA.HTML*/
+/* estilo h1*/
+
+.titulo{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo h1{
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  color: rgb(17, 16, 14);
+  text-shadow: 2px 2px 6px #000;
+  display: flex;
+  align-items: center;
+}
+
+/* fin estilo H1*/
+
+/* Estilo Main */
+
+#grilla{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 500px 500px;
+  grid-template-areas: "foto1" "foto2"
+                       "foto3  foto4";
+
+  row-gap: 10px;
+  column-gap: 10px;
+
+  background-color: #eee;
+}
+
+#imagenUno{
+  grid-area: "foto1";
+}
+
+#imagenDos{
+  grid-area: "foto3";
+}
+
+#imagenTres{
+  grid-area: "foto2";
+}
+
+#imagenCuatro{
+  grid-area: "foto4";
+}
+
+img{
+  max-width:100%;
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
+/*  fin estilo GALERIA.HTML*/
+
+
+/* inicio estilo formulario de CONTACTO.HTML*/
+
+form{
+  background-color: white;
+  border-radius: 3px;
+  color: #999;
+  font-size: 0.8em;
+  padding: 20px;
+  margin: 0 auto;
+  width: 500px;
+}
+
+textarea{
+  border: 0;
+  outline: none;
+  width: 280px;
+  color: #666;
+}
+
+.field{
+  border: solid 1px #ccc;
+  padding: 10px;
+
+  
+}
+
+.field:focus{
+  border-color: #666;
+}
+
+.center-content{
+  text-align: center;
+}
+
+.btn{
+	border-radius: 3px;
+	display: inline-block;
+	padding: 10px 10px;
+  margin-bottom: 1%;
+  margin-left: 90px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+}
+
+.btn-green{
+	color: white;
+	background-color: #666;
+}
+.btn-green:hover{
+	background-color: #999;	
+}
+.btn-green:active{
+	background-color: #29962A;
+}
+
+/* fin estilo formulario de contacto*/
+
+/* inicio estilo footer*/
+
+#footer{
+  height: 15%;
+  width: 100%;
+   
+}
+
+#footer ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  list-style: none;
+  background-color: antiquewhite;
+  
+
+}
+
+#footer li{
+  padding: 0px 30px;
+  align-items: center;
+  height: 20%;
+  width: 80px;
+  display: inline-block ;
+}
+
+/*fin estilo footer*/
+
+
+/* inicio estilo imagenes futuro carrousel en bodas.html, mascotas.html , paisajes.html */
+
+.imagenCarrousel{
+   display: flex;
+   width: 700px;
+   max-height: 600px;
+   margin: auto;
+   border-radius: 20px;
+
+}
+
+.contenedorCarrousel{
+  background-color: #eeeeee;
+  width: auto;
+}
+
+.contenedorTexto{
+  width: auto;
+}
+
+.contenedorTexto h2{
+  text-align: center;
+  font-family:"Dancing Script", cursive;
+  font-size: x-large;
+}
+/* fin estilo imagenes futuro carrousel en bodas, mascotas , paisajes */

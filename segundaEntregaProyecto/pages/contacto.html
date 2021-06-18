@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="https://kit.fontawesome.com/0f73ac9065.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet"/>
+    
+    <title>Capturando Instantes</title>
+  </head>
+  <body>
+    <!--inicio de header-->
+    <header class="header">
+       <!--logo de la pagina-->
+       <div class="headerLogo">
+        <img src="../imagenes/logo.png" alt=" imagen con el logo de la pagina" class="banner" /> 
+      </div>
+          
+      <!--inicio barra de navegacion-->
+      <nav class="headerMenu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="paisajes.html">Paisajes</a></li>
+          <li><a href="bodas.html">Bodas</a></li>
+          <li><a href="mascotas.html">Mascotas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <br />
+
+    <!-- inicio de formulario de contacto -->
+    <form action="">
+      <fieldset>
+        <legend>Tus Datos</legend>
+        <p>
+          <label for="nombre_apellido">Nombre:</label>
+          <input type="text" placeholder="nombre completo" />
+        </p>
+        
+        <p>
+          <label for="email">Correo:</label>
+          <input type="text" placeholder="ejemplo@gmail.com" />
+        </p>
+        
+        <p>
+          <label for="sexo"> Seleccione su sexo</label>
+          <br />
+          <input type="radio" name="sexo" value="masculino" />
+          <label for="masculino">M</label><br />
+          <input type="radio" name="sexo" value="femenino" />
+          <label for="femenino">F</label><br />
+        </p>
+        
+        <p>
+          <label for="servicios"> Queres mas informacion sobre:</label>
+          <select name="servicios" id="">
+            <option value="mascotas">Book de mascotas</option>
+            <option value="paisajes">Fotos de paisajes</option>
+            <option value="bodas">Book preboda y boda</option>
+          </select>
+        </p>
+        
+        <p>
+          <label for="comentarios">Comentarios</label>
+          <br />
+          <textarea name="Comentarios" id="" cols="30" rows="10"></textarea>
+        </p>
+        
+        <p>
+          <label for="acepta">Acepto que usen mis datos para contactarme</label>
+          <input type="checkbox" name="acepta" value="1" />
+        </p>
+        
+        <p>
+          <input type="submit" class="btn btn-green" value="enviar" />
+          <input type="reset" class="btn btn-green" value="resetear" />
+        </p>
+      </fieldset>
+    </form>
+    <!--Inicio de etiqueta footer-->
+    <footer id="footer">
+      <ul>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x"></i></a></li>
+        <li><a href="https://es-la.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+        <li><a href="https://www.pinterest.es/" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest fa-2x"></i></a></li>
+  
+      </ul>
+    </footer>
+  </body>
+</html>
